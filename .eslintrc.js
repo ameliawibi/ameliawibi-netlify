@@ -20,6 +20,8 @@ module.exports = {
     "react/react-in-jsx-scope": "off",
     // to allow imports of devDependencies
     "import/no-extraneous-dependencies": ["error", { devDependencies: true }],
+    // to disable typography's pet peeve
+    "react/no-unescaped-entities": 0,
     semi: ["error", "always"],
   },
   settings: {
