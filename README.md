@@ -69,6 +69,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-Attributes:
+### Attributes:
 
-<div>Icons made by <a href="" title="Payungkead">Payungkead</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+<div>
+Favicon made by Payungkead from <a href="https://www.flaticon.com/">www.flaticon.com</a><br>
+All other icons made by <a href="https://twitter.com/steveschoger"> Steveschoger from <a href="https://heroicons.com/">www.heroicons.com</a>
+</div>
