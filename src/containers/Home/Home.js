@@ -1,13 +1,13 @@
 import React from "react";
-import About from "../../components/About/About";
-import Experience from "../../components/Experience/Experience";
+import Header from "../../components/Header/Header";
+import Certs from "../../components/Certs/Certs";
 import Contact from "../Contact/Contact";
 
 function Home() {
   return (
     <main className="text-gray-400 bg-gray-900 body-font">
-      <About />
-      <Experience />
+      <Header />
+      <Certs />
       <Contact />
     </main>
   );

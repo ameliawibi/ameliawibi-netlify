@@ -1,8 +1,8 @@
-function About() {
+function Header() {
   return (
     <section
-      id="about"
-      className="container m-auto flex px-10 py-20 flex-col items-center md:flex-row"
+      id="header"
+      className="container m-auto flex px-10 py-5 flex-col items-center md:flex-row"
     >
       <div className="flex flex-col lg:flex-grow md:w-1/2 lg:pr-24 md:pr-8 items-center md:items-start text-center md:text-left mb-16 md:mb-0">
         <h1 className="title-font text-3xl mb-4 font-medium text-white sm:text-4xl">
@@ -38,4 +38,4 @@ function About() {
   );
 }
 
-export default About;
+export default Header;
