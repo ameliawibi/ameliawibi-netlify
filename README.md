@@ -73,5 +73,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 <div>
 Favicon made by Payungkead from <a href="https://www.flaticon.com/">www.flaticon.com</a><br>
-All other icons made by <a href="https://twitter.com/steveschoger"> Steveschoger from <a href="https://heroicons.com/">www.heroicons.com</a>
+All other icons made by <a href="https://twitter.com/steveschoger"> Steveschoger </a> from <a href="https://heroicons.com/">www.heroicons.com</a>
 </div>
