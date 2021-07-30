@@ -13,6 +13,13 @@ module.exports = {
   },
   plugins: ["import", "prettier", "react"],
   rules: {
+    "jsx-a11y/label-has-associated-control": [
+      2,
+      {
+        labelComponents: ["label"],
+        controlComponents: ["input"],
+      },
+    ],
     // this is an entirely frontend project, .js is fine
     "react/jsx-filename-extension": ["error", { extensions: [".js"] }],
     "import/extensions": ["error", { extensions: [".js", ".json"] }],
