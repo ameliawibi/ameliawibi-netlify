@@ -28,10 +28,12 @@
   </head>
   <body>
     <!-- A little help for the Netlify post-processing bots -->
-  <form name="contact" netlify netlify-honeypot="bot-field" action='/' hidden>
-    <input type="text" name="name" />
-    <input type="text" name="email" />
-    <textarea name="message"></textarea>
+  <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+    <input type="text" id="name" name="name" />
+    <input type="text" id="email" name="email" />
+    <textarea id="message" name="message"></textarea>
+    <input type="submit" value="Send" \>
+    <input type="reset" value="Clear" \>
   </form>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>

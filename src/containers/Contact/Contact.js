@@ -1,14 +1,4 @@
-import React, { useState, useEffect } from "react";
-
 function Contact() {
-  const [success, setSuccess] = useState(false);
-
-  useEffect(() => {
-    if (window.location.search.includes("success=true")) {
-      setSuccess(true);
-    }
-  }, []);
-
   return (
     <section
       className="container m-auto flex px-10 py-5 flex-col items-center lg:flex-row"
@@ -16,15 +6,14 @@ function Contact() {
     >
       <div className="mb-8">
         <form
-          name="contact v1"
+          name="contact"
           className="m-auto"
           method="POST"
-          action="/contact/?success=true"
           data-netlify="true"
           onSubmit="submit"
           data-netlify-honeypot="bot-field"
         >
-          <input type="hidden" name="form-name" value="contact v1" />
+          <input type="hidden" name="form-name" value="contact" />
           <div hidden>
             <input name="bot-field" />
           </div>
@@ -36,10 +25,8 @@ function Contact() {
             Have any questions? You can drop me a message!
           </p>
 
-          {success && <p className="text-base">Thanks for your message! </p>}
-
           <div className="mb-4">
-            <label className="leading-7 text-sm text-gray-400">
+            <label htmlFor="name" className="leading-7 text-sm text-gray-400">
               Name
               <input
                 className="w-full bg-gray-800 rounded border border-gray-700 focus:ring-2 focus:border-indigo-500 focus:ring-indigo-800 text-base text-white outline-none py-1 px-3 leading-8"
@@ -50,7 +37,7 @@ function Contact() {
             </label>
           </div>
           <div className="mb-4">
-            <label className="leading-7 text-sm text-gray-400">
+            <label htmlFor="email" className="leading-7 text-sm text-gray-400">
               Email
               <input
                 className="w-full bg-gray-800 rounded border border-gray-700 focus:ring-2 focus:border-indigo-500 focus:ring-indigo-800 text-base text-white outline-none py-1 px-3 leading-8"
@@ -61,7 +48,10 @@ function Contact() {
             </label>
           </div>
           <div className="mb-4">
-            <label className="leading-7 text-sm text-gray-400">
+            <label
+              htmlFor="message"
+              className="leading-7 text-sm text-gray-400"
+            >
               Message
               <textarea
                 className="w-full bg-gray-800 rounded border border-gray-700 focus:ring-2 focus:border-indigo-500 focus:ring-indigo-800 text-base text-white outline-none py-1 px-3 leading-relaxed"
