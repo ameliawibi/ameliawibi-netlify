@@ -12,16 +12,16 @@ function Header() {
         <p className="mb-8 leading-relaxed">
           “Life is a series of building, testing, changing and iterating.”
         </p>
-        <div className="flex justify-center">
+        <div className="flex justify-center gap-x-4 inline-flex">
           <a
             href="#contact"
-            className="inline-flex text-white bg-purple-600 border-0 py-2 px-4 focus:outline-none hover:bg-purple-500 rounded text-base md:px-6"
+            className="text-white bg-indigo-600 border-0 py-2 px-4 focus:outline-none hover:bg-indigo-500 rounded text-base md:px-6"
           >
             Contact Me
           </a>
           <a
             href="#experience"
-            className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-4 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-base md:px-6"
+            className="text-gray-400 bg-gray-800 border-0 py-2 px-4 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-base md:px-6"
           >
             About Me
           </a>
