@@ -1,4 +1,14 @@
+import React, { useState, useEffect } from "react";
+
 function Contact() {
+  const [success, setSuccess] = useState(false);
+
+  useEffect(() => {
+    if (window.location.search.includes("success=true")) {
+      setSuccess(true);
+    }
+  }, []);
+
   return (
     <section
       className="container m-auto flex px-10 py-5 flex-col items-center lg:flex-row"
@@ -8,7 +18,8 @@ function Contact() {
         <form
           name="contact v1"
           className="m-auto"
-          method="post"
+          method="POST"
+          action="/contact/?success=true"
           data-netlify="true"
           onSubmit="submit"
           data-netlify-honeypot="bot-field"
@@ -24,6 +35,8 @@ function Contact() {
           <p className="mb-8 leading-relaxed">
             Have any questions? You can drop me a message!
           </p>
+
+          {success && <p className="text-base">Thanks for your message! </p>}
 
           <div className="mb-4">
             <label className="leading-7 text-sm text-gray-400">
