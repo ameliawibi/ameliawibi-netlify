@@ -54,10 +54,11 @@ function Contact() {
             <label htmlFor="name" className="leading-7 text-sm text-gray-400">
               Name
               <input
-                className="w-full bg-gray-800 rounded border border-gray-700 focus:ring-2 focus:border-indigo-500 focus:ring-indigo-800 text-base text-white outline-none py-1 px-3 leading-8"
+                className="w-full bg-gray-800 rounded border border-gray-700 focus:ring-2 focus:border-indigo-500 focus:ring-indigo-800 text-base text-white outline-none py-1 px-3 leading-8 placeholder-gray-500"
                 type="text"
                 name="name"
                 id="name"
+                placeholder="Name"
               />
             </label>
           </div>
@@ -65,10 +66,11 @@ function Contact() {
             <label htmlFor="email" className="leading-7 text-sm text-gray-400">
               Email
               <input
-                className="w-full bg-gray-800 rounded border border-gray-700 focus:ring-2 focus:border-indigo-500 focus:ring-indigo-800 text-base text-white outline-none py-1 px-3 leading-8"
+                className="w-full bg-gray-800 rounded border border-gray-700 focus:ring-2 focus:border-indigo-500 focus:ring-indigo-800 text-base text-white outline-none py-1 px-3 leading-8 placeholder-gray-500"
                 type="text"
                 name="email"
                 id="email"
+                placeholder="Email"
               />
             </label>
           </div>
@@ -79,10 +81,11 @@ function Contact() {
             >
               Message
               <textarea
-                className="w-full bg-gray-800 rounded border border-gray-700 focus:ring-2 focus:border-indigo-500 focus:ring-indigo-800 text-base text-white outline-none py-1 px-3 leading-relaxed"
+                className="w-full bg-gray-800 rounded border border-gray-700 focus:ring-2 focus:border-indigo-500 focus:ring-indigo-800 text-base text-white outline-none py-1 px-3 leading-relaxed placeholder-gray-500"
                 name="message"
                 rows="6"
                 id="message"
+                placeholder="Type your message here"
               />
             </label>
           </div>
