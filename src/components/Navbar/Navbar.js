@@ -15,7 +15,7 @@ function Navbar() {
     <Router>
       <section
         id="navbar"
-        className="container flex flex-row m-auto px-10 py-5 items-start  md:sticky"
+        className="container flex flex-row m-auto px-10 py-5 items-start bg-gray-900"
       >
         <div className="flex text-xs md:text-base">
           <p className="hidden md:block font-medium text-white px-4 border-r border-gray-700">
