@@ -3,8 +3,8 @@ import { useEffect, useState } from "react";
 function Weather() {
   // State
   const [apiData, setApiData] = useState({});
-  const [getState, setGetState] = useState("");
-  const [state, setState] = useState("");
+  const [getState, setGetState] = useState("Singapore");
+  const [state, setState] = useState("Singapore");
 
   // API KEY AND URL
   // const apiKey = process.env.REACT_APP_API_KEY;
@@ -49,7 +49,7 @@ function Weather() {
         </li>
       </ul>
 
-      {apiData.list ? (
+      {apiData.count > 0 ? (
         <div
           className="mt-4 w-128 max-w-lg overflow-hidden bg-gray-800
       rounded-lg shadow-lg border border-gray-700"
