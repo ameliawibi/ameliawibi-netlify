@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { ISO3166countries } from "../../components/data";
 
 function Weather() {
   // State
@@ -67,7 +68,13 @@ function Weather() {
                   {apiData.list[0].weather[0].description}
                 </p>
                 <p>
-                  {apiData.list[0].name}, {apiData.list[0].sys.country}
+                  {apiData.list[0].name},
+                  {
+                    ISO3166countries.find(
+                      (element) =>
+                        element.alpha2 === apiData.list[0].sys.country
+                    ).name
+                  }
                 </p>
               </div>
             </div>
