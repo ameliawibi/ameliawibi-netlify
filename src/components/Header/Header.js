@@ -20,10 +20,10 @@ function Header() {
             Contact Me
           </a>
           <a
-            href="#experience"
+            href="#whyme"
             className="text-gray-400 bg-gray-800 border-0 py-2 px-4 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-base md:px-6"
           >
-            About Me
+            Why me
           </a>
         </div>
       </div>

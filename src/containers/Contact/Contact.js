@@ -1,3 +1,5 @@
+import { social } from "../../components/data";
+
 function Contact() {
   return (
     <section
@@ -21,30 +23,16 @@ function Contact() {
             Let's get in touch
           </h2>
           <div className="inline flex gap-x-3 mb-4">
-            <a
-              href="mailto:ameliawibi@gmail.com"
-              rel="noopener noreferrer"
-              target="_blank"
-              className="text-gray-400 bg-gray-800 border-0 py-1 px-4 focus:outline-none hover:bg-gray-700 hover:text-white rounded-xl text-base"
-            >
-              Email
-            </a>
-            <a
-              href="https://www.linkedin.com/in/amelia-wibisono-32314984/"
-              rel="noopener noreferrer"
-              target="_blank"
-              className="text-gray-400 bg-gray-800 border-0 py-1 px-4 focus:outline-none hover:bg-gray-700 hover:text-white rounded-xl text-base"
-            >
-              Linkedin
-            </a>
-            <a
-              href="https://github.com/ameliawibi"
-              rel="noopener noreferrer"
-              target="_blank"
-              className="text-gray-400 bg-gray-800 border-0 py-1 px-4 focus:outline-none hover:bg-gray-700 hover:text-white rounded-xl text-base"
-            >
-              Github
-            </a>
+            {social.map((data) => (
+              <a
+                href={data.link}
+                rel="noopener noreferrer"
+                target="_blank"
+                className="text-gray-400 bg-gray-800 border-0 py-1 px-4 focus:outline-none hover:bg-gray-700 hover:text-white rounded-xl text-base"
+              >
+                {data.text}
+              </a>
+            ))}
           </div>
           <p className="mb-8 leading-relaxed">
             Have any questions? You can drop me a message!
