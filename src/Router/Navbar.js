@@ -6,9 +6,9 @@ import {
   Link,
   Redirect,
 } from "react-router-dom";
-import Home from "../../containers/Home/Home";
-import Contact from "../../containers/Contact/Contact";
-import Weather from "../../containers/Weather/Weather";
+import Home from "../pages/Home/Home";
+import Contact from "../pages/Contact/Contact";
+import Weather from "../pages/Weather/Weather";
 
 function Navbar() {
   return (

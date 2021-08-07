@@ -1,9 +1,9 @@
 import React from "react";
-import Header from "../../components/Header/Header";
-import Certs from "../../components/Certs/Certs";
-import Whyme from "../../components/Whyme/Whyme";
+import Header from "../../containers/Header/Header";
+import Certs from "../../containers/Certs/Certs";
+import Whyme from "../../containers/Whyme/Whyme";
 import Contact from "../Contact/Contact";
-import Aboutme from "../../components/Aboutme/Aboutme";
+import Aboutme from "../../containers/Aboutme/Aboutme";
 
 function Home() {
   return (

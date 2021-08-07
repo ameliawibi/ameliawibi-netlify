@@ -1,4 +1,4 @@
-import { social } from "../../components/data";
+import { social } from "../../containers/data";
 
 function Contact() {
   return (

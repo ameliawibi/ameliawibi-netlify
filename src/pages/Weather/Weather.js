@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { ISO3166countries } from "../../components/data";
+import { ISO3166countries } from "../../containers/data";
 
 function Weather() {
   // State

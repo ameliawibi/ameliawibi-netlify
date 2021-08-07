@@ -1828,7 +1828,7 @@ export const aboutme = [
     chapter: "CHAPTER I:",
     chaptertitle: "HELLO WORLD",
     story:
-      "I was born and raised in Surabaya, Indonesia. I spent most of my childhood most of my childhood studying (not my favourite times) and playing games (the awesome bit). My parents were not rich but still afford to give me a beautiful childhood and I really appreciate their sacrifices. They would reward me with the latest game console (no matter how expensive it was for them) only if I achieved the top class rank for 3 times consecutively each year. Being young and foolish, I hated this strict criteria. Now looking back, I realized that the next chapters of my life was shaped as an unintended by-product of my parents' reward system.",
+      "I was born and raised in Surabaya, Indonesia. I spent most of my childhood most of my childhood studying (not my favourite times) and playing games (the awesome bit). My parents were not rich but still afford to give me a beautiful childhood and I really appreciate their sacrifices. They would reward me with the latest game console (no matter how expensive it was for them) only if I achieved the top class rank for 3 times consecutively each year. Being young and foolish, I hated this strict criteria. Now looking back, I realized that the next chapters of my life would have been shaped as an unintended by-product of my parents' reward system.",
   },
   {
     year: "2006",
@@ -1845,18 +1845,18 @@ export const aboutme = [
       "Eventually I chose my first career as a HR, all along the way trying to stay true to my need to always do work I loved (helping people) and that I could throw my heart and soul into. Being a lifelong learner, I took Post Grad Diploma in HR and Diploma in Counselling to further brush up my skills. I’ve worked in HR for a long time and continuously learning new things on the job, but I've always felt that I have not found my home in HR as I realized that there was a limitation on how much I could help people. I was trying to make peace with my past choice of embarking on this career, taking what I need from the experiences that I've had and leaving behind all that no longer serves my life's purpose.",
   },
   {
-    year: "2019",
+    year: "2020",
     chapter: "CHAPTER IV:",
     chaptertitle: "BYE HR, HELLO PRODUCT",
     story:
-      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ips quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
+      "“What is product manager?” That was my immediate response when my boyfriend suggested to me a career switch into a product management. At first (for a few months),I was not even considering it. Then one day, I stumbled upon a job advertisement for Solutions Manager for an early stage tech start up. My immediate thought was that the role is to solve problems for people (still being clueless as ever about product) and of course I jumped at the chance. The take-home assignment was to create user stories and low-fidelity mock up for a B2B SaaS application (and I loved it). Long story short, now I am working with an amazing team as a Product Manager where I can be hands on in building product that people will use. This career move would not have been possible without the support of my boyfriend and my current boss who placed his faith on me.",
   },
   {
     year: "2021",
     chapter: "CHAPTER V:",
     chaptertitle: "ITERATING ON MYSELF",
     story:
-      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ips quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
+      "The concept of iterating on ideas in my work is a fairly common one. You start with the initial idea, refine it, review it, scrutinize it again, refine it all over again until you are ready to pass to the team to develop. I was thinking if I could apply that iteration on myself. What if I continue to grow? Could I improve? Will I find my purpose? Or will it be a waste of time? Instead of being frustated with the uncertainty, I just want to make my life counts. Being iterative requires me to start first, and take my past experiences and use them to make better iteration in the future. I took several courses to further improve myself (and also to overcome my Imposter Syndrome at work). So far, this past year had taught me a lot more about courageous decisions and endless possibilities. I become more aware of how much I love learning new things and building products over staying in my comfort zone.",
   },
 ];
 

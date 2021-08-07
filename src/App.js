@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "./components/Navbar/Navbar";
+import Navbar from "./Router/Navbar";
 import "tailwindcss/tailwind.css";
 
 function App() {
