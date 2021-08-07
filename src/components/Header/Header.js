@@ -1,3 +1,5 @@
+import { intro } from "../data";
+
 function Header() {
   return (
     <section
@@ -6,12 +8,11 @@ function Header() {
     >
       <div className="flex flex-col lg:flex-grow md:w-1/2 lg:pr-24 md:pr-8 items-center md:items-start text-center md:text-left mb-16 md:mb-0">
         <h1 className="text-3xl mb-4 font-medium text-white sm:text-4xl">
-          Hi, I'm Amelia.
-          <br className="lg:inline-block" />I love coding.
+          {intro.line1}
+          <br className="lg:inline-block" />
+          {intro.line2}
         </h1>
-        <p className="mb-8 leading-relaxed">
-          “Life is a series of building, testing, changing and iterating.”
-        </p>
+        <p className="mb-8 leading-relaxed">{intro.line3}</p>
         <div className="flex justify-center gap-x-4 inline-flex">
           <a
             href="#contact"

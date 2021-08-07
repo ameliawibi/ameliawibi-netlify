@@ -1821,3 +1821,47 @@ export const ISO3166countries = [
     numeric: "716",
   },
 ];
+
+export const aboutme = [
+  {
+    year: "1991",
+    chapter: "CHAPTER I:",
+    chaptertitle: "HELLO WORLD",
+    story:
+      "I was born and raised in Surabaya, Indonesia. I spent most of my childhood most of my childhood studying (not my favourite times) and playing games (the awesome bit). My parents were not rich but still afford to give me a beautiful childhood and I really appreciate their sacrifices. They would reward me with the latest game console (no matter how expensive it was for them) only if I achieved the top class rank for 3 times consecutively each year. Being young and foolish, I hated this strict criteria. Now looking back, I realized that the next chapters of my life was shaped as an unintended by-product of my parents' reward system.",
+  },
+  {
+    year: "2006",
+    chapter: "CHAPTER II:",
+    chaptertitle: "OFF TO SINGAPORE",
+    story:
+      "When I received the offer of a scholarship from Singapore, it was crazy! Nobody in our family had ever been to Singapore (or anywhere really). This was a big deal for my family because this scholarship represents the chance of a lifetime. Long story short, I spent my teenage years and early 20s studying here in Singapore (no game consoles).",
+  },
+  {
+    year: "2015",
+    chapter: "CHAPTER III:",
+    chaptertitle: "PREVIOUS LIFE AS HR",
+    story:
+      "Eventually I chose my first career as a HR, all along the way trying to stay true to my need to always do work I loved (helping people) and that I could throw my heart and soul into. Being a lifelong learner, I took Post Grad Diploma in HR and Diploma in Counselling to further brush up my skills. I’ve worked in HR for a long time and continuously learning new things on the job, but I've always felt that I have not found my home in HR as I realized that there was a limitation on how much I could help people. I was trying to make peace with my past choice of embarking on this career, taking what I need from the experiences that I've had and leaving behind all that no longer serves my life's purpose.",
+  },
+  {
+    year: "2019",
+    chapter: "CHAPTER IV:",
+    chaptertitle: "BYE HR, HELLO PRODUCT",
+    story:
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ips quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
+  },
+  {
+    year: "2021",
+    chapter: "CHAPTER V:",
+    chaptertitle: "ITERATING ON MYSELF",
+    story:
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ips quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
+  },
+];
+
+export const intro = {
+  line1: "Hi,I'm Amelia.",
+  line2: "I love coding.",
+  line3: "“Life is a series of building, testing, changing and iterating.”",
+};
