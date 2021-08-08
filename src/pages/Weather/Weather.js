@@ -25,6 +25,8 @@ function Weather() {
   const submitHandler = () => {
     setCity(cityInput);
   };
+  const hasWeatherInfoForToday = () => apiData.count > 0;
+  const hasWeatherInfoForTomorrow = () => apiData.count > 1;
 
   return (
     <section
@@ -50,7 +52,7 @@ function Weather() {
         </li>
       </ul>
 
-      {apiData.count > 0 ? (
+      {hasWeatherInfoForToday() > 0 ? (
         <div
           className="mt-4 w-128 max-w-lg overflow-hidden bg-gray-800
       rounded-lg shadow-lg border border-gray-700"
@@ -87,7 +89,7 @@ function Weather() {
             </div>
           </div>
 
-          <div className="text-sm bg-gray-700 divide-y divide-gray-800 overflow-hidden">
+	  { hasWeatherInfoForTomorrow() && <div className="text-sm bg-gray-700 divide-y divide-gray-800 overflow-hidden">
             <div className="flex items-center px-6 py-4 ">
               <p className="w-1/6 text-lg text-gray-200">Tomorrow</p>
               <div className="flex items-center w-2/3 px-4">
@@ -106,7 +108,7 @@ function Weather() {
                 <p>Max: {apiData.list[1].main.temp_max}&deg; C</p>
               </div>
             </div>
-          </div>
+          </div>}
         </div>
       ) : (
         <div>
