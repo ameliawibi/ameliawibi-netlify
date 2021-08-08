@@ -4,8 +4,8 @@ import { ISO3166countries } from "../../containers/data";
 function Weather() {
   // State
   const [apiData, setApiData] = useState({});
-  const [getState, setGetState] = useState("Singapore");
-  const [state, setState] = useState("Singapore");
+  const [city, setCity] = useState("Singapore");
+  const [cityInput, setCityInput] = useState("Singapore");
 
   // API KEY AND URL
   // const apiKey = process.env.REACT_APP_API_KEY;
@@ -19,11 +19,11 @@ function Weather() {
   }, [apiUrl]);
 
   const inputHandler = (event) => {
-    setGetState(event.target.value);
+    setCityInput(event.target.value);
   };
 
   const submitHandler = () => {
-    setState(getState);
+    setCity(cityInput);
   };
 
   return (
@@ -37,7 +37,7 @@ function Weather() {
         className="w-full max-w-lg bg-gray-800 rounded border border-gray-700 focus:ring-2 focus:border-indigo-500 focus:ring-indigo-800 text-base text-white outline-none py-1 px-3 leading-8 placeholder-gray-500 mb-4"
         placeholder="City name"
         onChange={inputHandler}
-        value={getState}
+        value={cityInput}
       />
       <ul className="flex justify-left">
         <li>
