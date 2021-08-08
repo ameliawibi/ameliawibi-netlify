@@ -9,14 +9,14 @@ function Weather() {
 
   // API KEY AND URL
   // const apiKey = process.env.REACT_APP_API_KEY;
-  const apiUrl = `https://api.openweathermap.org/data/2.5/find?q=${state}&units=metric&appid=f446ebd39041d8bc392415e3c6721b6f`;
+  const generateApiUrl = (query) => `https://api.openweathermap.org/data/2.5/find?q=${query}&units=metric&appid=f446ebd39041d8bc392415e3c6721b6f`;
 
   // Side effect
   useEffect(() => {
-    fetch(apiUrl)
+    fetch(generateApiUrl(city))
       .then((res) => res.json())
       .then((data) => setApiData(data));
-  }, [apiUrl]);
+  }, [city]);
 
   const inputHandler = (event) => {
     setCityInput(event.target.value);
