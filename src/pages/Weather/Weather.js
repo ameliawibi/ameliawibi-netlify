@@ -4,27 +4,29 @@ import { ISO3166countries } from "../../containers/data";
 function Weather() {
   // State
   const [apiData, setApiData] = useState({});
-  const [getState, setGetState] = useState("Singapore");
-  const [state, setState] = useState("Singapore");
+  const [city, setCity] = useState("Singapore");
+  const [cityInput, setCityInput] = useState("Singapore");
 
   // API KEY AND URL
   // const apiKey = process.env.REACT_APP_API_KEY;
-  const apiUrl = `https://api.openweathermap.org/data/2.5/find?q=${state}&units=metric&appid=f446ebd39041d8bc392415e3c6721b6f`;
+  const generateApiUrl = (query) => `https://api.openweathermap.org/data/2.5/find?q=${query}&units=metric&appid=f446ebd39041d8bc392415e3c6721b6f`;
 
   // Side effect
   useEffect(() => {
-    fetch(apiUrl)
+    fetch(generateApiUrl(city))
       .then((res) => res.json())
       .then((data) => setApiData(data));
-  }, [apiUrl]);
+  }, [city]);
 
   const inputHandler = (event) => {
-    setGetState(event.target.value);
+    setCityInput(event.target.value);
   };
 
   const submitHandler = () => {
-    setState(getState);
+    setCity(cityInput);
   };
+  const hasWeatherInfoForToday = () => apiData.count > 0;
+  const hasWeatherInfoForTomorrow = () => apiData.count > 1;
 
   return (
     <section
@@ -37,7 +39,7 @@ function Weather() {
         className="w-full max-w-lg bg-gray-800 rounded border border-gray-700 focus:ring-2 focus:border-indigo-500 focus:ring-indigo-800 text-base text-white outline-none py-1 px-3 leading-8 placeholder-gray-500 mb-4"
         placeholder="City name"
         onChange={inputHandler}
-        value={getState}
+        value={cityInput}
       />
       <ul className="flex justify-left">
         <li>
@@ -50,7 +52,7 @@ function Weather() {
         </li>
       </ul>
 
-      {apiData.count > 0 ? (
+      {hasWeatherInfoForToday() > 0 ? (
         <div
           className="mt-4 w-128 max-w-lg overflow-hidden bg-gray-800
       rounded-lg shadow-lg border border-gray-700"
@@ -87,7 +89,7 @@ function Weather() {
             </div>
           </div>
 
-          <div className="text-sm bg-gray-700 divide-y divide-gray-800 overflow-hidden">
+	  { hasWeatherInfoForTomorrow() && <div className="text-sm bg-gray-700 divide-y divide-gray-800 overflow-hidden">
             <div className="flex items-center px-6 py-4 ">
               <p className="w-1/6 text-lg text-gray-200">Tomorrow</p>
               <div className="flex items-center w-2/3 px-4">
@@ -106,7 +108,7 @@ function Weather() {
                 <p>Max: {apiData.list[1].main.temp_max}&deg; C</p>
               </div>
             </div>
-          </div>
+          </div>}
         </div>
       ) : (
         <div>
