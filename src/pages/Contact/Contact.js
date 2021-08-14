@@ -10,10 +10,8 @@ function Contact() {
   } = useForm();
 
   const onSubmit = (data) => {
-    alert(JSON.stringify(data));
+    JSON.stringify(data);
   };
-  console.log(errors);
-  console.log({ ...register("name", { required: true }) });
 
   return (
     <section
