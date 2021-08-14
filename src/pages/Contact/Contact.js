@@ -9,6 +9,9 @@ function Contact() {
 
   const { isValid, touchedFields, errors } = formState;
 
+  const getButtonEnableDisable = () =>
+    isValid ? " bg-indigo-500 hover:bg-indigo-500" : " bg-gray-800 opacity-25";
+
   return (
     <section
       className="container flex-1 flex-col m-auto justify-between px-10 py-5 items-start min-h-screen"
@@ -101,10 +104,14 @@ function Contact() {
           <ul className="flex justify-left">
             <li>
               <input
-                className="inline-flex text-white bg-indigo-600 border-0 py-2 px-4 focus:outline-none hover:bg-indigo-500 rounded text-base md:px-6 disabled:bg-gray-200 disabled:cursor-auto disabled:pointer-events-none"
+                className={
+                  // eslint-disable-next-line
+                  "inline-flex text-white border-0 py-2 px-4 focus:outline-none rounded text-base md:px-6" +
+                  getButtonEnableDisable()
+                }
                 type="submit"
-                disabled={!isValid}
                 value="Send"
+                disabled={!isValid}
               />
             </li>
             <li>
