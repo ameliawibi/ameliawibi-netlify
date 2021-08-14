@@ -3,15 +3,11 @@ import { social } from "../../containers/data";
 
 /* eslint-disable react/jsx-props-no-spreading */
 function Contact() {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
+  const { register, formState, clearErrors } = useForm({
+    mode: "onChange",
+  });
 
-  const onSubmit = (data) => {
-    JSON.stringify(data);
-  };
+  const { isValid, touchedFields, errors } = formState;
 
   return (
     <section
@@ -25,7 +21,6 @@ function Contact() {
           method="POST"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
-          onSubmit={handleSubmit(onSubmit)}
         >
           <input type="hidden" name="form-name" value="contact" />
           <div hidden>
@@ -61,7 +56,7 @@ function Contact() {
                 {...register("name", { required: true })}
               />
             </label>
-            {errors.name && (
+            {errors.name && touchedFields.name && (
               <span className="text-sm text-red-400">
                 This field is required
               </span>
@@ -79,7 +74,7 @@ function Contact() {
                 {...register("email", { required: true })}
               />
             </label>
-            {errors.email && (
+            {errors.email && touchedFields.email && (
               <span className="text-sm text-red-400">
                 This field is required
               </span>
@@ -97,7 +92,7 @@ function Contact() {
                 {...register("message", { required: true })}
               />
             </label>
-            {errors.message && (
+            {errors.message && touchedFields.message && (
               <span className="text-sm text-red-400">
                 This field is required
               </span>
@@ -106,8 +101,9 @@ function Contact() {
           <ul className="flex justify-left">
             <li>
               <input
-                className="inline-flex text-white bg-indigo-600 border-0 py-2 px-4 focus:outline-none hover:bg-indigo-500 rounded text-base md:px-6"
+                className="inline-flex text-white bg-indigo-600 border-0 py-2 px-4 focus:outline-none hover:bg-indigo-500 rounded text-base md:px-6 disabled:bg-gray-200 disabled:cursor-auto disabled:pointer-events-none"
                 type="submit"
+                disabled={!isValid}
                 value="Send"
               />
             </li>
@@ -116,6 +112,9 @@ function Contact() {
                 className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-4 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-base md:px-6"
                 type="reset"
                 value="Clear"
+                onClick={() => {
+                  clearErrors();
+                }}
               />
             </li>
           </ul>

@@ -6,6 +6,11 @@ module.exports = {
     extend: {},
   },
   variants: {
+    extend: {
+      cursor: ['disabled'],
+      pointerEvents: ['disabled'],
+      backgroundColor: ['disabled'],
     },
+  },
   plugins: [],
 };
