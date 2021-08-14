@@ -10,7 +10,7 @@ function Contact() {
   const { isValid, touchedFields, errors } = formState;
 
   const getButtonEnableDisable = () =>
-    isValid ? " bg-indigo-500 hover:bg-indigo-500" : " bg-gray-800 opacity-25";
+    isValid ? " bg-indigo-700 hover:bg-indigo-500" : " bg-gray-800 opacity-25";
 
   return (
     <section
