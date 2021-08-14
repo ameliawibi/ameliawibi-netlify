@@ -11,7 +11,7 @@ function Contact() {
 
   return (
     <section
-      className="container flex-1 flex-col m-auto justify-between px-10 py-5 items-start h-screen"
+      className="container flex-1 flex-col m-auto justify-between px-10 py-5 items-start min-h-screen"
       id="contact"
     >
       <div className="mb-8">
