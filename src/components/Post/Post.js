@@ -1,5 +1,6 @@
+import PropTypes from "prop-types";
+
 function Post(props) {
-  /* eslint-disable react/prop-types */
   const { title, desc, author } = props;
   return (
     <div>
@@ -9,5 +10,13 @@ function Post(props) {
     </div>
   );
 }
+
+Post.propTypes = {
+  title: PropTypes.oneOf(["Loading", "Ready"]),
+  desc: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  author: PropTypes.arrayOf(
+    PropTypes.oneOfType([PropTypes.number, PropTypes.string])
+  ).isRequired,
+};
 
 export default Post;

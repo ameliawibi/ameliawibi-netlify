@@ -1,4 +1,7 @@
+import "./Header.css";
+
 import { intro } from "../data";
+import Button from "../../components/Button/Button";
 
 function Header() {
   return (
@@ -26,11 +29,13 @@ function Header() {
           >
             Why me
           </a>
+          <Button disabled>plain disabled</Button>
+          <Button>plain</Button>
         </div>
       </div>
       <div className="hidden md:block w-1/2 h-1/2">
         <img
-          className="object-scale-down object-center rounded"
+          className="animateit object-scale-down object-center rounded"
           alt="joyride"
           src="undraw_Joyride.svg"
         />

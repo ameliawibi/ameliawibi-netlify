@@ -1,0 +1,15 @@
+.animateit {
+  animation-name: expanding;
+  animation-duration: 8s;
+  animation-style: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes expanding {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+}
