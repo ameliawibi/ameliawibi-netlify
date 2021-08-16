@@ -2,6 +2,7 @@ import { useForm } from "react-hook-form";
 import { social } from "../../containers/data";
 import Button from "../../components/Button";
 import { PRIMARY, SECONDARY } from "../../components/Button/Button";
+import Chip from "../../components/Chip";
 
 /* eslint-disable react/jsx-props-no-spreading */
 function Contact() {
@@ -33,14 +34,7 @@ function Contact() {
           </h2>
           <div className="inline flex gap-x-3 mb-4">
             {social.map((socials) => (
-              <a
-                href={socials.link}
-                rel="noopener noreferrer"
-                target="_blank"
-                className="text-gray-400 bg-gray-800 border-0 py-1 px-4 focus:outline-none hover:bg-gray-700 hover:text-white rounded-xl text-base"
-              >
-                {socials.text}
-              </a>
+              <Chip href={socials.link}>{socials.text}</Chip>
             ))}
           </div>
           <p className="mb-8 leading-relaxed">

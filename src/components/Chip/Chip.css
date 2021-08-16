@@ -1,0 +1,9 @@
+.Chip {
+  @apply text-gray-400 bg-gray-800 border-0 py-1 px-4 rounded-xl text-base;
+}
+.Chip:hover {
+  @apply bg-gray-700 text-white;
+}
+.Chip:focus {
+  @apply outline-none;
+}
