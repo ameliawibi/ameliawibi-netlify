@@ -1,4 +1,9 @@
-import { HomeIcon, ChatAltIcon, CloudIcon } from "@heroicons/react/solid";
+import {
+  HomeIcon,
+  ChatAltIcon,
+  CloudIcon,
+  SparklesIcon,
+} from "@heroicons/react/solid";
 import {
   BrowserRouter as Router,
   Switch,
@@ -9,6 +14,7 @@ import {
 import Home from "../pages/Home/Home";
 import Contact from "../pages/Contact/Contact";
 import Weather from "../pages/Weather/Weather";
+import PageUI from "../pages/PageUI/PageUI";
 
 function Navbar() {
   return (
@@ -33,6 +39,10 @@ function Navbar() {
             <CloudIcon className="h-5 w-5 mr-1" />
             Weather
           </Link>
+          <Link to="/ui" className="inline flex mr-3 md:mr-5">
+            <SparklesIcon className="h-5 w-5 mr-1" />
+            UI
+          </Link>
         </div>
       </section>
       <Switch>
@@ -47,6 +57,9 @@ function Navbar() {
         </Route>
         <Route exact path="/weather">
           <Weather />
+        </Route>
+        <Route exact path="/ui">
+          <PageUI />
         </Route>
       </Switch>
     </Router>

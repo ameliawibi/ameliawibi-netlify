@@ -1,7 +1,7 @@
 import "./Header.css";
-
 import { intro } from "../data";
-import Button from "../../components/Button/Button";
+import Button from "../../components/Button";
+import { PRIMARY, SECONDARY } from "../../components/Button/Button";
 
 function Header() {
   return (
@@ -17,20 +17,12 @@ function Header() {
         </h1>
         <p className="mb-8 leading-relaxed">{intro.line3}</p>
         <div className="flex justify-center gap-x-4 inline-flex">
-          <a
-            href="#contact"
-            className="text-white bg-indigo-600 border-0 py-2 px-4 focus:outline-none hover:bg-indigo-500 rounded text-base md:px-6"
-          >
-            Contact Me
-          </a>
-          <a
-            href="#whyme"
-            className="text-gray-400 bg-gray-800 border-0 py-2 px-4 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-base md:px-6"
-          >
-            Why me
-          </a>
-          <Button disabled>plain disabled</Button>
-          <Button>plain</Button>
+          <Button variant={PRIMARY}>
+            <a href="#contact">Contact Me</a>
+          </Button>
+          <Button variant={SECONDARY}>
+            <a href="#whyme">Why me</a>
+          </Button>
         </div>
       </div>
       <div className="hidden md:block w-1/2 h-1/2">

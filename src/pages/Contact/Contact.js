@@ -1,5 +1,7 @@
 import { useForm } from "react-hook-form";
 import { social } from "../../containers/data";
+import Button from "../../components/Button";
+import { PRIMARY, SECONDARY } from "../../components/Button/Button";
 
 /* eslint-disable react/jsx-props-no-spreading */
 function Contact() {
@@ -8,9 +10,6 @@ function Contact() {
   });
 
   const { isValid, touchedFields, errors } = formState;
-
-  const getButtonEnableDisable = () =>
-    isValid ? " bg-indigo-700 hover:bg-indigo-500" : " bg-gray-800 opacity-25";
 
   return (
     <section
@@ -101,30 +100,20 @@ function Contact() {
               </span>
             )}
           </div>
-          <ul className="flex justify-left">
-            <li>
-              <input
-                className={
-                  // eslint-disable-next-line
-                  "inline-flex text-white border-0 py-2 px-4 focus:outline-none rounded text-base md:px-6" +
-                  getButtonEnableDisable()
-                }
-                type="submit"
-                value="Send"
-                disabled={!isValid}
-              />
-            </li>
-            <li>
-              <input
-                className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-4 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-base md:px-6"
-                type="reset"
-                value="Clear"
-                onClick={() => {
-                  clearErrors();
-                }}
-              />
-            </li>
-          </ul>
+          <div className="flex justify-center gap-x-4 inline-flex">
+            <Button variant={PRIMARY} type="submit" disabled={!isValid}>
+              Send
+            </Button>
+            <Button
+              variant={SECONDARY}
+              type="reset"
+              onClick={() => {
+                clearErrors();
+              }}
+            >
+              Clear
+            </Button>
+          </div>
         </form>
       </div>
     </section>
