@@ -28,7 +28,7 @@ Button.propTypes = {
   disabled: PropTypes.bool,
   onClick: PropTypes.func,
   variant: PropTypes.oneOf([PRIMARY, SECONDARY]),
-  type: PropTypes.oneOf(["submit", "reset", "submit"]),
+  type: PropTypes.oneOf(["submit", "reset", "button"]),
 };
 
 Button.defaultProps = {

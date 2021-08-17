@@ -18,7 +18,7 @@ function Header() {
         <p className="mb-8 leading-relaxed">{intro.line3}</p>
         <div className="flex justify-center gap-x-4 inline-flex">
           <Button variant={PRIMARY}>
-            <a href="#contact">Contact Me</a>
+            <a href="#contact">Contact mee</a>
           </Button>
           <Button variant={SECONDARY}>
             <a href="#whyme">Why me</a>

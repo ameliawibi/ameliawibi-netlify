@@ -1,5 +1,6 @@
 import ButtonUI from "../../containers/UI/ButtonUI";
 import ChipUI from "../../containers/UI/ChipUI";
+import FormFieldUI from "../../containers/UI/FormFieldUI";
 
 function PageUI() {
   return (
@@ -9,6 +10,7 @@ function PageUI() {
     >
       <ButtonUI />
       <ChipUI />
+      <FormFieldUI />
     </section>
   );
 }

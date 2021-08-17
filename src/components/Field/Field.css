@@ -1,0 +1,9 @@
+.Label {
+  @apply leading-7 text-sm text-gray-400;
+}
+.Field {
+  @apply w-full bg-gray-800 rounded border border-gray-700 text-base text-white outline-none py-1 px-3 leading-8 placeholder-gray-500;
+}
+.Field:focus {
+  @apply ring-2 border-indigo-500 ring-indigo-800;
+}
