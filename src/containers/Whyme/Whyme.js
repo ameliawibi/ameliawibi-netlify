@@ -12,7 +12,10 @@ function Whyme() {
         </h1>
         <ul className="leading-relaxed inline-grid grid-cols-1 md:grid-cols-3 gap-4">
           {whyme.map((data) => (
-            <li className="text-center hover:text-white">
+            <li
+              key={data.id.toString()}
+              className="text-center hover:text-white"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-12 w-12 m-auto p-2 border-2 rounded-full border-gray-200"

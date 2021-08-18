@@ -36,7 +36,9 @@ function Contact() {
           </h2>
           <div className="inline flex gap-x-3 mb-4">
             {social.map((socials) => (
-              <Chip link={socials.link}>{socials.text}</Chip>
+              <Chip key={socials.link} link={socials.link}>
+                {socials.text}
+              </Chip>
             ))}
           </div>
           <p className="mb-8 leading-relaxed">

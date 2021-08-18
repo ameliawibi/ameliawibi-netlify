@@ -8,15 +8,18 @@ function Aboutme() {
         id="scrolling-content"
         className="md:flex overflow-x-scroll hide-scroll-bar"
       >
-        {aboutme.map((data) => (
-          <div className="md:w-2/5 mb-8 md:m-8 hover:text-white flex-shrink-0">
+        {aboutme.map((about) => (
+          <div
+            key={about.year}
+            className="md:w-2/5 mb-8 md:m-8 hover:text-white flex-shrink-0"
+          >
             <h1 className="text-6xl text-gray-700 tracking-wider">
-              {data.year}
+              {about.year}
             </h1>
             <h2 className="-mt-6 text-2xl">
-              {data.chapter} <br /> {data.chaptertitle}
+              {about.chapter} <br /> {about.chaptertitle}
             </h2>
-            <p className="ml-2 mt-10">{data.story}</p>
+            <p className="ml-2 mt-10">{about.story}</p>
           </div>
         ))}
       </div>

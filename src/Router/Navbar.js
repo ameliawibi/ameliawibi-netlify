@@ -4,13 +4,7 @@ import {
   CloudIcon,
   SparklesIcon,
 } from "@heroicons/react/solid";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  Redirect,
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from "../pages/Home/Home";
 import Contact from "../pages/Contact/Contact";
 import Weather from "../pages/Weather/Weather";
@@ -46,7 +40,7 @@ function Navbar() {
         </div>
       </section>
       <Switch>
-        <Route exact path="/" render={() => <Redirect to="/home" />}>
+        <Route exact path="/">
           <Home />
         </Route>
         <Route exact path="/home">
