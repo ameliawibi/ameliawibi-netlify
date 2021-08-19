@@ -1,0 +1,27 @@
+.Whyme-container {
+  @apply container flex-1 flex-col m-auto justify-center px-10 py-5;
+}
+
+.Whyme {
+  @apply flex flex-col lg:flex-grow lg:pr-24 md:pr-8 mb-8;
+}
+
+.Whyme h1 {
+  @apply text-2xl mb-4 font-medium text-center md:text-left text-white sm:text-3xl;
+}
+
+.Whyme ul {
+  @apply leading-relaxed inline-grid grid-cols-1 md:grid-cols-3 gap-4;
+}
+
+.Whyme ul li {
+  @apply text-center hover:text-white;
+}
+
+.Whyme ul svg {
+  @apply h-12 w-12 m-auto p-2 border-2 rounded-full border-gray-200;
+}
+
+.Whyme ul p {
+  @apply mt-2;
+}

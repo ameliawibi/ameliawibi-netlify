@@ -9,32 +9,28 @@ import Home from "../pages/Home/Home";
 import Contact from "../pages/Contact/Contact";
 import Weather from "../pages/Weather/Weather";
 import PageUI from "../pages/PageUI/PageUI";
+import "./Navbar.css";
 
 function Navbar() {
   return (
     <Router>
-      <section
-        id="navbar"
-        className="container flex flex-row m-auto px-10 py-5 items-start bg-gray-900"
-      >
-        <div className="flex text-xs md:text-base">
-          <p className="hidden md:block font-medium text-white px-4 border-r border-gray-700">
-            Amelia Wibi
-          </p>
-          <Link to="/home" className="inline flex mx-3 md:mr-5">
-            <HomeIcon className="h-5 w-5 mr-1" />
-            About me
+      <section id="navbar" className="Nav-container">
+        <div className="Nav">
+          <p>Amelia Wibi</p>
+          <Link to="/home" className="Nav-link">
+            <HomeIcon className="Nav-icon" />
+            About
           </Link>
-          <Link to="/contact" className="inline flex mr-3 md:mr-5">
-            <ChatAltIcon className="h-5 w-5 mr-1" />
-            Contact me
+          <Link to="/contact" className="Nav-link">
+            <ChatAltIcon className="Nav-icon" />
+            Contact
           </Link>
-          <Link to="/weather" className="inline flex mr-3 md:mr-5">
-            <CloudIcon className="h-5 w-5 mr-1" />
+          <Link to="/weather" className="Nav-link">
+            <CloudIcon className="Nav-icon" />
             Weather
           </Link>
-          <Link to="/ui" className="inline flex mr-3 md:mr-5">
-            <SparklesIcon className="h-5 w-5 mr-1" />
+          <Link to="/ui" className="Nav-link">
+            <SparklesIcon className="Nav-icon" />
             UI
           </Link>
         </div>

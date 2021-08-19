@@ -5,3 +5,27 @@
 .hide-scroll-bar::-webkit-scrollbar {
   display: none;
 }
+
+.About-container {
+  @apply container py-5 px-10 m-auto;
+}
+
+.About-scrolling {
+  @apply md:flex overflow-x-scroll hide-scroll-bar;
+}
+
+.About {
+  @apply md:w-2/5 mb-8 md:m-8 hover:text-white flex-shrink-0;
+}
+
+.About h1 {
+  @apply text-6xl text-gray-700 tracking-wider;
+}
+
+.About h2 {
+  @apply -mt-6 text-2xl;
+}
+
+.About p {
+  @apply ml-2 mt-10;
+}

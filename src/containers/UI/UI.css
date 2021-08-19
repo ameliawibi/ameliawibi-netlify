@@ -1,0 +1,15 @@
+.UI {
+  @apply m-8;
+}
+
+.UI h2 {
+  @apply text-3xl mb-4 font-medium text-white sm:text-4xl;
+}
+
+.UI-button-div {
+  @apply flex justify-start gap-4 inline-flex flex-wrap;
+}
+
+.UI-field-div {
+  @apply md:w-3/4 lg:w-2/3 xl:w-1/2 mb-4;
+}

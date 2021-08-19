@@ -1,16 +1,17 @@
 import { certs } from "../data";
+import "./Certs.css";
 
 function Certs() {
   return (
-    <section id="cert" className="container flex m-auto px-10 py-5 items-start">
-      <div className="flex-col text-center md:text-left">
-        <h1 className="text-2xl mb-4 font-medium items-start text-white sm:text-3xl">
+    <section id="cert" className="Certs-container">
+      <div className="Certs-header">
+        <h1>
           Things I officially know about.
-          <br className="lg:inline-block" />
+          <br />
           (but Coding Ain't One)
         </h1>
 
-        <div className="mb-4 grid grid-cols-3 md:grid-cols-5 flex flex-row justify-center">
+        <div className="Certs-grid">
           {certs.map((cert) => (
             <a
               href={cert.link}

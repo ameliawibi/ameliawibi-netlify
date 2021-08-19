@@ -1,0 +1,19 @@
+.Certs-container {
+  @apply container flex m-auto px-10 py-5 items-start;
+}
+
+.Certs-header {
+  @apply flex-col text-center md:text-left;
+}
+
+.Certs-header h1 {
+  @apply text-2xl mb-4 font-medium items-start text-white sm:text-3xl;
+}
+
+.Certs-header br {
+  @apply lg:inline-block;
+}
+
+.Certs-grid {
+  @apply mb-4 grid grid-cols-3 md:grid-cols-5 flex flex-row justify-center;
+}

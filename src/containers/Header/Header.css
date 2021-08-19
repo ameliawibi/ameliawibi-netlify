@@ -13,3 +13,35 @@
     transform: scale(1.08);
   }
 }
+
+.Header-container {
+  @apply container m-auto flex px-10 py-5 flex-col items-center md:flex-row;
+}
+
+.Header {
+  @apply flex flex-col lg:flex-grow md:w-1/2 lg:pr-24 md:pr-8 items-center md:items-start text-center md:text-left mb-16 md:mb-0;
+}
+
+.Header h1 {
+  @apply text-3xl mb-4 font-medium text-white sm:text-4xl;
+}
+
+.Header br {
+  @apply lg:inline-block;
+}
+
+.Header p {
+  @apply mb-8 leading-relaxed;
+}
+
+.Header-button-div {
+  @apply flex justify-center gap-x-4 inline-flex;
+}
+
+.Header-image {
+  @apply hidden md:block w-1/2 h-1/2;
+}
+
+.Header-image img {
+  @apply animateit object-scale-down object-center rounded;
+}

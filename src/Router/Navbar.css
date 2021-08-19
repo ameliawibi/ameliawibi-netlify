@@ -1,0 +1,19 @@
+.Nav-container {
+  @apply container flex flex-row m-auto px-10 py-5 items-start bg-gray-900;
+}
+
+.Nav {
+  @apply flex text-xs md:text-base;
+}
+
+.Nav p {
+  @apply hidden md:block font-medium text-white px-4 border-r border-gray-700;
+}
+
+.Nav-link {
+  @apply inline flex mx-2 md:mr-5;
+}
+
+.Nav-icon {
+  @apply h-5 w-5 mr-1;
+}
