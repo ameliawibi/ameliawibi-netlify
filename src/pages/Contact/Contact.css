@@ -1,0 +1,31 @@
+.Contact {
+  @apply mb-8;
+}
+
+.Contact form {
+  @apply m-auto;
+}
+
+.Contact h2 {
+  @apply text-3xl mb-4 font-medium text-white sm:text-4xl;
+}
+
+.Contact p {
+  @apply mb-8 leading-relaxed;
+}
+
+.Contact span {
+  @apply text-sm text-red-400;
+}
+
+.Contact-chip-div {
+  @apply inline flex gap-x-3 mb-4;
+}
+
+.Contact-field-div {
+  @apply md:w-3/4 lg:w-2/3 xl:w-1/2 mb-4;
+}
+
+.Contact-button-div {
+  @apply flex justify-center gap-x-4 inline-flex;
+}

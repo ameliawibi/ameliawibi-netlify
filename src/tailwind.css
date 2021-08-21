@@ -5,3 +5,7 @@
 body {
   @apply bg-gray-900;
 }
+
+.Container {
+  @apply container flex-1 flex-col m-auto justify-between px-10 py-5 items-start min-h-screen;
+}

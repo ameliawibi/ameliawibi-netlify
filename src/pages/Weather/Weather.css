@@ -1,0 +1,51 @@
+.Handler input {
+  @apply w-full max-w-lg bg-gray-800 rounded border border-gray-700 focus:ring-2 focus:border-indigo-500 focus:ring-indigo-800 text-base text-white outline-none py-1 px-3 leading-8 placeholder-gray-500 mb-4;
+}
+
+.Handler ul {
+  @apply flex justify-start;
+}
+
+.Weatherinfo {
+  @apply mt-4 w-full max-w-lg overflow-hidden bg-gray-800 rounded-lg shadow-lg border border-gray-700;
+}
+
+.Weatherinfotoday {
+  @apply flex items-center justify-between px-4 py-8;
+}
+
+.Weatherinfotoday > div {
+  @apply flex items-center gap-x-5;
+}
+
+.Weatherinfotoday h2 {
+  @apply text-xl md:text-4xl text-white;
+}
+
+.Weatherinfotoday h3 {
+  @apply text-sm md:text-base;
+}
+
+.Weatherinfotoday p {
+  @apply text-sm md:text-base font-semibold;
+}
+
+.Weatherinfotmr {
+  @apply text-sm bg-gray-700 divide-y divide-gray-800 overflow-hidden;
+}
+
+.Weatherinfotmr > div {
+  @apply flex items-center px-4 py-4;
+}
+
+.Weatherinfotmr h4 {
+  @apply w-2/6 text-lg text-gray-200;
+}
+
+.Weatherinfotmr aside.left {
+  @apply flex items-center w-2/3 px-4 gap-x-3;
+}
+
+.Weatherinfotmr aside.right {
+  @apply w-1/2 text-right;
+}

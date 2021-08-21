@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { ISO3166countries } from "../../containers/data";
 import Button from "../../components/Button";
 import { PRIMARY } from "../../components/Button/Button";
+import "./Weather.css";
 
 function Weather() {
   // State
@@ -32,41 +33,32 @@ function Weather() {
   const hasWeatherInfoForTomorrow = () => apiData.count > 1;
 
   return (
-    <section
-      id="weather"
-      className="container flex-1 flex-col m-auto justify-between px-10 py-5 items-start h-screen"
-    >
-      <input
-        id="search"
-        type="text"
-        className="w-full max-w-lg bg-gray-800 rounded border border-gray-700 focus:ring-2 focus:border-indigo-500 focus:ring-indigo-800 text-base text-white outline-none py-1 px-3 leading-8 placeholder-gray-500 mb-4"
-        placeholder="City name"
-        onChange={inputHandler}
-        value={cityInput}
-      />
-      <ul className="flex justify-left">
-        <Button variant={PRIMARY} type="submit" onClick={submitHandler}>
-          Search
-        </Button>
-      </ul>
+    <section id="weather" className="Container">
+      <div className="Handler">
+        <input
+          id="search"
+          type="text"
+          placeholder="City name"
+          onChange={inputHandler}
+          value={cityInput}
+        />
+        <ul>
+          <Button variant={PRIMARY} type="submit" onClick={submitHandler}>
+            Search
+          </Button>
+        </ul>
+      </div>
 
       {hasWeatherInfoForToday() > 0 ? (
-        <div
-          className="mt-4 w-128 max-w-lg overflow-hidden bg-gray-800
-      rounded-lg shadow-lg border border-gray-700"
-        >
-          <div className="flex items-center justify-between px-6 py-8">
-            <div className="flex items-center">
+        <section id="weatherinfo" className="Weatherinfo">
+          <div className="Weatherinfotoday">
+            <div>
               <div>
-                <p className="text-3xl md:text-4xl text-white">
-                  {apiData.list[0].main.temp}&deg;C
-                </p>
-                <p>Feels like {apiData.list[0].main.feels_like}&deg;C</p>
+                <h2>{apiData.list[0].main.temp}&deg;C</h2>
+                <h3>Feels like {apiData.list[0].main.feels_like}&deg;C</h3>
               </div>
-              <div className="mx-5">
-                <p className="font-semibold">
-                  {apiData.list[0].weather[0].description}
-                </p>
+              <div>
+                <p>{apiData.list[0].weather[0].description}</p>
                 <p>
                   {apiData.list[0].name},
                   {
@@ -82,37 +74,35 @@ function Weather() {
               <img
                 src={`http://openweathermap.org/img/w/${apiData.list[0].weather[0].icon}.png`}
                 alt="weather status icon"
-                className="weather-icon"
               />
             </div>
           </div>
 
           {hasWeatherInfoForTomorrow() && (
-            <div className="text-sm bg-gray-700 divide-y divide-gray-800 overflow-hidden">
-              <div className="flex items-center px-6 py-4 ">
-                <p className="w-1/6 text-lg text-gray-200">Tomorrow</p>
-                <div className="flex items-center w-2/3 px-4">
+            <div className="Weatherinfotmr">
+              <div>
+                <h4>Tomorrow</h4>
+                <aside className="left">
                   <img
                     src={`http://openweathermap.org/img/w/${apiData.list[1].weather[0].icon}.png`}
                     alt="weather status icon"
-                    className="weather-icon"
                   />
-                  <p className="ml-3">
+                  <p>
                     {apiData.list[1].main.temp}&deg; C <br />
                     {apiData.list[1].weather[0].description}
                   </p>
-                </div>
-                <div className="w-1/2 text-right">
+                </aside>
+                <aside className="right">
                   <p>Min: {apiData.list[1].main.temp_min}&deg; C</p>
                   <p>Max: {apiData.list[1].main.temp_max}&deg; C</p>
-                </div>
+                </aside>
               </div>
             </div>
           )}
-        </div>
+        </section>
       ) : (
         <div>
-          <h1 className="mt-2">Data is not available.</h1>
+          <span>Data is not available.</span>
         </div>
       )}
     </section>
